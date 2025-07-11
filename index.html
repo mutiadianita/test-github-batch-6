@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedai Kopi Aroma - Secangkir Kebahagiaan</title>
+    <style>
+        /* Reset dan Gaya Dasar */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #fdfaf6;
+            color: #4a4a4a;
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: #6f4e37; /* Warna coklat kopi */
+        }
+
+        /* Header dan Navigasi */
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .brand-logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #6f4e37;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #4a4a4a;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #a67b5b;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner.jpeg');
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            text-align: center;
+            padding: 15rem 1rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            background-color: #a67b5b;
+            color: #ffffff;
+            padding: 0.8rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #6f4e37;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 0;
+            text-align: center;
+        }
+
+        /* Menu Section */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .menu-item {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .menu-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #ffffff;
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="brand-logo">Kedai Kopi Aroma</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+            <div class="cart-icon">
+                <a href="#cart" style="text-decoration: none; color: #6f4e37; font-size: 1.2rem;">
+                    🛒 (<span id="cart-count">0</span>)
+                </a>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1>Seni Menyeduh Kopi, Disajikan Untuk Anda</h1>
+                <p>Temukan cita rasa kopi terbaik dari biji pilihan yang diproses dengan penuh gairah.</p>
+                <a href="#menu" class="cta-button">Lihat Menu Kami</a>
+            </div>
+        </section>
+
+        <section id="menu">
+            <div class="container">
+                <h2>Menu Andalan Kami</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="https://placehold.co/300x200/a67b5b/white?text=Espresso" alt="Espresso">
+                        <h3>Espresso</h3>
+                        <p>Ekstraksi kopi murni dengan rasa yang intens dan kaya.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://placehold.co/300x200/a67b5b/white?text=Caffe+Latte" alt="Caffe Latte">
+                        <h3>Caffè Latte</h3>
+                        <p>Perpaduan lembut antara espresso dan susu steam yang creamy.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://placehold.co/300x200/a67b5b/white?text=Cappuccino" alt="Cappuccino">
+                        <h3>Cappuccino</h3>
+                        <p>Keseimbangan sempurna antara espresso, susu, dan busa susu tebal.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" style="background-color: #ffffff;">
+            <div class="container">
+                <h2>Cerita di Balik Cangkir</h2>
+                <p>Kedai Kopi Aroma didirikan pada tahun 2020 dengan mimpi sederhana: menyajikan kopi berkualitas tinggi kepada komunitas kami. Kami bekerja sama langsung dengan petani lokal untuk mendapatkan biji kopi terbaik dan menyeduhnya dengan teknik modern untuk mengeluarkan potensi rasa yang maksimal.</p>
+            </div>
+        </section>
+        <section id="gallery" style="background-color: #fdfaf6;">
+            <div class="container">
+                <h2>Galeri Kami</h2>
+                <div class="menu-grid">
+                    <div class="menu-item">         
+                        <img src="https://placehold.co/300x200/a67b5b/white?text=Kopi+Seduh" alt="Kopi Seduh">
+                        <h3>Kopi Seduh</h3>
+                        <p>Proses penyeduhan kopi yang sempurna.</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="https://placehold.co/300x200/a67b5b/white?text=Kedai+Kopi" alt="Kedai Kopi">
+                        <h3>Kedai Kopi</h3>
+                        <p>Suasana hangat dan nyaman untuk menikmati kopi.</p>
+                    </div>
+                    <div class="menu-item">                     
+                        <img src="https://placehold.co/300x200/a67b5b/white?text=Barista+Kami" alt="Barista Kami">
+                        <h3>Barista Kami</h3>
+                        <p>Barista terlatih kami siap menyajikan kopi terbaik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimonials" style="background-color: #ffffff;">
+            <div class="container">
+                <h2>Apa Kata Pelanggan Kami</h2>
+                <p>"Kedai Kopi Aroma adalah tempat favorit saya untuk bersantai. Kopinya luar biasa!" - Sarah</p>
+                <p>"Pelayanan yang ramah dan kopi yang nikmat, tidak ada yang bisa mengalahkan pengalaman di sini." - Budi</p>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="container">
+                <h2>Kunjungi Kami</h2>
+                <p>Jl. Aroma Kopi No. 45, Jakarta Selatan</p>
+                <p>Buka Setiap Hari: 08:00 - 22:00</p>
+                <p>Email: info@kedaiaroma.com</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Kedai Kopi Aroma. Dibuat dengan ❤️.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
